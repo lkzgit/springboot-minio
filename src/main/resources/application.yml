@@ -1,0 +1,13 @@
+spring :
+  ## 设置传输文件最大容量，防止上传文件因为容量太大导致上传失败
+  servlet:
+    multipart:
+      maxFileSize: 2000MB
+      maxRequestSize: 2000MB
+minio:
+  ## 以下仅仅本机测试,项目中不同文件肯定肯定存放的位置不一样，所以bocket（桶名也是不固定的）
+  url: http://127.0.0.1:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bocket: images
+
